@@ -11,10 +11,6 @@ download.file(URL,destfile="./data/Dataset.zip",method="curl")
 unzip(zipfile="./data/Dataset.zip",exdir="./data")
 
 
-#get the list of the files
-path <- file.path("./data" , "UCI HAR Dataset")
-files <-list.files(path, recursive=TRUE)
-
 ###############################################
 #read data
 

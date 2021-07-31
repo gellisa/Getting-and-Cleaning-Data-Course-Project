@@ -59,6 +59,5 @@ data2<-aggregate(. ~subject + activity, data, mean)
 data2<-data2[order(data2$subject,Data2$activity),]
 write.table(data2, file = "tidydata.txt",row.name=FALSE)
 
-library(knitr)
-knit2html("codebook.Rmd")
+
 
